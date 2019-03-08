@@ -1,0 +1,57 @@
+extends includes/layout.pug
+
+block variables
+    - var title = 'Contact';
+
+block content
+    section.banner_area
+        .banner_inner.d-flex.align-items-center
+            .overlay.bg-parallax(data-stellar-ratio='0.9', data-stellar-vertical-offset='0', data-background='')
+            .container
+                .banner_content.text-center
+                    h2 Contact us
+                    .page_link
+                        a(href='index.html') Home
+                        a(href='contact.html') Contact
+
+    section.contact_area.p_120
+      .container
+        //- #mapBox.mapBox(data-lat='19.1154313', data-lon='72.8734737', data-zoom='13', data-info='Marol, Andheri East, Mumbai, Maharashtra', data-mlat='19.1154313', data-mlon='72.8734737')
+        .row
+          .col-lg-4
+            .contact_info#contactSection
+              .info_item
+                i.lnr.lnr-home
+                h6 Mumbai, India
+                p Marol, Andheri East, Mumbai 400059, Maharashtra
+          .col-lg-4
+            .contact_info#contactSection
+              .info_item
+                i.lnr.lnr-phone-handset
+                h6
+                  a(href='tel:+919167352916') (+91) 9167352916
+                p Mon to Fri 10am to 6 pm
+          .col-lg-4
+            .contact_info#contactSection
+              .info_item
+                i.lnr.lnr-envelope
+                h6
+                  a(href='mailto:tino1000@live.com') tino1000@live.com
+                p Send us your query anytime!
+          .col-lg-9
+            form#contactForm.row.contact_form(action='contact', method='post', novalidate='novalidate')
+              .col-md-6
+                .form-group
+                  input#name.form-control(type='text', name='name', placeholder='Enter your name')
+                .form-group
+                  input#email.form-control(type='email', name='email', placeholder='Enter email address')
+                .form-group
+                  input#subject.form-control(type='text', name='subject', placeholder='Enter Subject')
+              .col-md-6
+                .form-group
+                  textarea#message.form-control(name='message', rows='1', placeholder='Enter Message')
+              .col-md-12.text-right
+                button.btn.submit_btn(type='submit', value='submit') Send Message
+
+    //- include includes/testimonials.pug
+    //- include includes/latest-blogs.pug

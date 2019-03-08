@@ -1,0 +1,21 @@
+extends includes/layout.pug
+
+block variables
+    - var title = 'Services';
+    - var featureClass = 'feature_tow'
+
+block content
+    section.banner_area
+        .banner_inner.d-flex.align-items-center
+            .overlay.bg-parallax(data-stellar-ratio='0.9', data-stellar-vertical-offset='0', data-background='')
+            .container
+                .banner_content.text-center
+                    h2 Services
+                    .page_link
+                        a(href='index.html') Home
+                        a(href='services.html') Services
+
+
+    include includes/features.pug
+    //- include includes/testimonials.pug
+    //- include includes/latest-blogs.pug

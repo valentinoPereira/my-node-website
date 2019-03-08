@@ -1,0 +1,40 @@
+//- ================Header Menu Area =================
+header.header_area
+  #mainNav.main_menu
+    nav.navbar.navbar-expand-lg.navbar-light
+      .container.box_1620
+        // Brand and toggle get grouped for better mobile display
+        a.navbar-brand.logo_h(href='index.html')
+          img(src='img/logo-v.png', alt='')
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        // Collect the nav links, forms, and other content for toggling
+        #navbarSupportedContent.collapse.navbar-collapse.offset
+          ul.nav.navbar-nav.menu_nav.ml-auto
+            li.nav-item.active
+              a.nav-link(href='index.html') Home
+            li.nav-item
+              a.nav-link(href='about-us.html') About
+            li.nav-item
+              a.nav-link(href='services.html') Services
+            //- li.nav-item.submenu.dropdown
+              a.nav-link.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false') Pages
+              ul.dropdown-menu
+                li.nav-item
+                  a.nav-link(href='portfolio.html') Portfolio
+                li.nav-item
+                  a.nav-link(href='portfolio-details.html') Project Details
+                li.nav-item
+                  a.nav-link(href='elements.html') Elements
+            //- li.nav-item.submenu.dropdown
+              a.nav-link.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false') Blog
+              ul.dropdown-menu
+                li.nav-item
+                  a.nav-link(href='blog.html') Blog
+                li.nav-item
+                  a.nav-link(href='single-blog.html') Blog Details
+            li.nav-item
+              a.nav-link(href='contact.html') Contact
+//- ================Header Menu Area =================

@@ -1,0 +1,28 @@
+block append variables
+  - var projects = [{'name': 'Grayquest', 'image': 'img/projects/projects-1.jpg', 'type': 'ui'},{'name': 'Fishtalent', 'image': 'img/projects/projects-2.jpg', 'type': 'ui'},{'name': 'You&EyeOnline', 'image': 'img/projects/projects-3.jpg', 'type': 'ui'},{'name': 'Impact FRP', 'image': 'img/projects/projects-4.jpg', 'type': 'ui backend'},{'name': 'SellMobileOnline', 'image': 'img/projects/projects-5.jpg', 'type': 'ui'},{'name': 'Bellary Motors', 'image': 'img/projects/projects-6.jpg', 'type': 'mobile'}, {'name': 'Deuco Stitching wire', 'image': 'img/projects/projects-1.jpg', 'type': 'ui'}, {'name': 'BlinkHearts', 'image': 'img/projects/projects-2.jpg', 'type': 'ui backend'}, {'name': 'Soundnlight', 'image': 'img/projects/projects-3.jpg', 'type': 'ui'}, {'name': 'Plakkr', 'image': 'img/projects/projects-4.jpg', 'type': 'ui'}, {'name': 'Chemtrends', 'image': 'img/projects/projects-4.jpg', 'type': 'backend'}];
+//- ================Projects Area =================
+section.projects_area.p_120
+  .container
+    .main_title
+      h2 Our Recent Completed Projects
+      p Proud to have a number of projects under my belt of expertise. Most of them are for the company clients with whom I've worked in the past.
+    .projects_fillter
+      ul.filter.list
+        li.active(data-filter='*')
+          a(href='#') All Categories
+        li(data-filter='.ui')
+          a(href='#') UI/UX
+        li(data-filter='.backend')
+          a(href='#') Backend 
+        li(data-filter='.mobile')
+          a(href='#') Mobile apps
+    .projects_inner.row
+      each val in projects
+        .col-lg-4.col-sm-6.brand(class=val.type)
+          .projects_item
+            img.img-fluid(src=val.image, alt=`${val.name} image`)
+            .projects_text
+              a(href='#')
+                h4= val.name
+              p Client Project
+//- ================End Projects Area =================

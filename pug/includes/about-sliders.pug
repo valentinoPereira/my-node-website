@@ -1,0 +1,41 @@
+block append variables
+  - var tools = [{'name': 'UI/UX', 'percentage': '85'}, {'name': 'Angular', 'percentage': '90'}, {'name': 'PHP', 'percentage': '90'}, {'name': 'NodeJS', 'percentage': '60'}, {'name': 'VS Code', 'percentage': '90'}, {'name': 'Git', 'percentage': '90'}];
+//- ================Welcome Area =================
+section.welcome_area.p_120
+  .container
+    .row.welcome_inner
+      .col-lg-6
+        .welcome_text
+          h4 About Myself
+          p
+            | Hi, My name is Valentino Pereira and I live in Marol. I was born on 11th November 1995 in Mumbai and raised up in the city itself. I'm quite passionate about coding and gaming. Singing and dancing are my hobbies, and my goal is to make the world a better place.
+          .row
+            .col-md-4
+              .wel_item
+                i.lnr.lnr-database
+                h4 2.5 y
+                p Total Experience
+            .col-md-4
+              .wel_item
+                i.lnr.lnr-book
+                h4 11
+                p Total Projects
+            .col-md-4
+              .wel_item
+                i.lnr.lnr-users
+                h4 5
+                p Satisfied Clients
+      .col-lg-6
+        .tools_expert
+          h3 Tools Expertness
+          .skill_main
+            each val in tools
+              .skill_item
+                h4
+                  | #{val.name} 
+                  span.counter #{val.percentage}
+                  | %
+                .progress
+                  .progress-bar(role='progressbar', aria-valuenow=val.percentage, aria-valuemin='0', aria-valuemax='100')
+            
+//- ================End Welcome Area =================

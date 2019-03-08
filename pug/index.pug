@@ -1,0 +1,28 @@
+extends includes/layout.pug
+
+block variables
+    - var title = "Home";
+
+block content
+    //- ================Home Banner Area =================
+    section.home_banner_area
+        .banner_inner
+            .container
+                .row
+                    .col-lg-6
+                        .home_left_img
+                            img(src='img/banner/valentino.png', alt='Valentino Pereira image', height='550', width='360')
+                    .col-lg-6
+                        .banner_content
+                            h5 This is me
+                            h2 Valentino Pereira
+                            p
+                                | UI/UX, backend specialist with 2.5 years industry experience. Professional in Bootstrap, Angular, Jquery, PHP, PHP Codeigniter and Tailor made websites.
+                            a.banner_btn(href='services.html') Discover Now
+    //- ================End Home Banner Area =================
+
+    include includes/about-sliders.pug
+    include includes/features.pug
+    include includes/my-projects.pug
+    //- include includes/testimonials.pug
+    //- include includes/latest-blogs.pug

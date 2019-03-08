@@ -1,0 +1,20 @@
+extends includes/layout.pug
+
+block variables
+    - var title = 'About';
+
+block content
+    section.banner_area
+        .banner_inner.d-flex.align-items-center
+            .overlay.bg-parallax(data-stellar-ratio='0.9', data-stellar-vertical-offset='0', data-background='')
+            .container
+                .banner_content.text-center
+                    h2 About me
+                    .page_link
+                        a(href='index.html') Home
+                        a(href='about-us.html') About Me
+
+
+    include includes/about-sliders.pug
+    //- include includes/testimonials.pug
+    //- include includes/latest-blogs.pug
