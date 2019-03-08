@@ -1,7 +1,7 @@
 # my-node-website
 This is my website in core nodejs. This is my personal website, which you can say its my portfolio website.
 
-I have tried experimenting NodeJS without using the express framework. So all the code you will see is in *Core NodeJS*.
+I have tried experimenting NodeJS without using the express framework. So all the code you will see is in Core NodeJS.
 I have tried to avoid using any libraries, and the ones which are used in this repository are super important ones, because core NodeJS does not support that functionality.
 
 Pre-requisites:-
