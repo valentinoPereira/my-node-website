@@ -12,4 +12,4 @@ Steps to run:-
 2) Open the directory in which you have cloned the website in your command line.
 3) Run "npm install" command.
 4) Create a ".env" file in your project root with the same variables as there are in the ".env.example" file, but with your credentials.
-5) Run the app using "npm start".
+5) Run the app using "npm start" in you command line, and open your http://localhost:8080 in your web browser .
